@@ -13,7 +13,7 @@ A daily or weekly digest delivered to your preferred messaging app (Telegram, Di
 WhatsApp, etc.) with:
 
 - Summaries of new podcast episodes from top AI podcasts
-- Key posts and insights from 32 curated AI builders on X/Twitter
+- Key posts and insights from 33 curated AI builders on X/Twitter
 - Links to all original content
 - Available in English, Chinese, or bilingual
 
@@ -64,19 +64,14 @@ These are plain English instructions, not code. Changes take effect on the next 
 ## Default Sources
 
 ### Podcasts (5)
-- Latent Space
-- Training Data
-- Lenny's Podcast
-- No Priors
-- Unsupervised Learning
+- [Latent Space](https://www.youtube.com/@LatentSpacePod)
+- [Training Data](https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8)
+- [Lenny's Podcast](https://www.youtube.com/@LennysPodcast)
+- [No Priors](https://www.youtube.com/@NoPriorsPodcast)
+- [Unsupervised Learning](https://www.youtube.com/@RedpointAI)
 
-### AI Builders on X (32)
-Andrej Karpathy, Swyx, Greg Isenberg, Lenny Rachitsky, Josh Woodward, Kevin Weil,
-Peter Yang, Nan Yu, Madhu Guru, Mckay Wrigley, Steven Johnson, Amanda Askell,
-Cat Wu, Thariq, Google Labs, George Mack, Raiza Martin, Amjad Masad, Guillermo Rauch,
-Riley Brown, Alex Albert, Hamel Husain, Aaron Levie, Ryo Lu, Garry Tan,
-Lulu Cheng Meservey, Justine Moore, Matt Turck, Julie Zhuo, Gabriel Peters, PJ Ace,
-Zara Zhang
+### AI Builders on X (33)
+[Andrej Karpathy](https://x.com/karpathy), [Swyx](https://x.com/swyx), [Greg Isenberg](https://x.com/gregisenberg), [Lenny Rachitsky](https://x.com/lennysan), [Josh Woodward](https://x.com/joshwoodward), [Kevin Weil](https://x.com/kevinweil), [Peter Yang](https://x.com/petergyang), [Nan Yu](https://x.com/thenanyu), [Madhu Guru](https://x.com/realmadhuguru), [Mckay Wrigley](https://x.com/mckaywrigley), [Steven Johnson](https://x.com/stevenbjohnson), [Amanda Askell](https://x.com/AmandaAskell), [Cat Wu](https://x.com/_catwu), [Thariq](https://x.com/trq212), [Google Labs](https://x.com/GoogleLabs), [Raiza Martin](https://x.com/raizamrtn), [Amjad Masad](https://x.com/amasad), [Guillermo Rauch](https://x.com/rauchg), [Riley Brown](https://x.com/rileybrown), [Alex Albert](https://x.com/alexalbert__), [Hamel Husain](https://x.com/HamelHusain), [Aaron Levie](https://x.com/levie), [Ryo Lu](https://x.com/ryolu_), [Garry Tan](https://x.com/garrytan), [Lulu Cheng Meservey](https://x.com/lulumeservey), [Justine Moore](https://x.com/venturetwins), [Matt Turck](https://x.com/mattturck), [PJ Ace](https://x.com/PJaccetturo), [Zara Zhang](https://x.com/zarazhangrui), [Nikunj Kothari](https://x.com/nikunj), [Peter Steinberger](https://x.com/steipete), [Dan Shipper](https://x.com/danshipper), [Aditya Agarwal](https://x.com/adityaag)
 
 ## Installation
 
