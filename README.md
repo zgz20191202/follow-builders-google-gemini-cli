@@ -12,11 +12,7 @@
 Unlike the original project which requires manual `.env` configuration, this version is designed to be **managed entirely through conversation with an AI agent**.
 
 ### ✨ My Contributions & Enhancements:
-- **Zero-Config Setup:** The Gemini agent handles the entire setup via chat. No more manual editing of API keys or `.env` files.
 - **Gemini-Optimized Intelligence:** All `prompts/` have been overhauled to leverage Gemini's specific strengths in long-context summarization and technical reasoning.
-- **Bilingual Mastery:** Deep integration of English/Chinese translation logic, allowing for seamless, interleaved bilingual digests.
-- **Google Workspace Integration:** Natively wired into Gemini's Gmail tools for automated daily/weekly delivery.
-- **Terminal-Native Formatting:** Optimized Markdown output designed to be perfectly readable inside a CLI environment.
 
 ---
 
