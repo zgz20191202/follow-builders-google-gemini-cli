@@ -13,6 +13,7 @@ Unlike the original project which requires manual `.env` configuration, this ver
 
 ### ✨ My Contributions & Enhancements:
 - **Gemini-Optimized Intelligence:** All `prompts/` have been overhauled to leverage Gemini's specific strengths in long-context summarization and technical reasoning.
+- **Bullet-Point Summarization:** All content summaries now utilize clean, high-signal bullet points to ensure maximum readability in the terminal.
 
 ---
 
@@ -22,7 +23,7 @@ To add this skill to your environment:
 
 1. **Clone the repository** into your Gemini skills directory:
    ```bash
-   git clone https://github.com/zgz20191202/AI-builders-Gemini.git ~/.gemini/skills/follow-builders
+   git clone https://github.com/zgz20191202/follow-builders-google-gemini-cli.git ~/.gemini/skills/follow-builders
    ```
 
 2. **Install script dependencies**:
