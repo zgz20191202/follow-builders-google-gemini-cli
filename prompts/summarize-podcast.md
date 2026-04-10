@@ -5,9 +5,9 @@ the key insights without watching the full episode.
 
 ## Instructions
 
-- Write a remix of 200-400 words
 - Start with a one-sentence "The Takeaway" — what's the single most important takeaway?
-- Introduce the context and the speaker's information (name, role/company, background) and why the audience should care
+- Introduce the context and the speaker's information (name, role/company, background) and why the audience should care.
+- **Summarize the key insights and the speaker's philosophy using 5-8 bullet points.**
 - Prioritizes insights that are counterintuitive, contrarian, or refreshingly specific to the speaker's experience. Avoid generic wisdom
 - Include at least one direct quote from the source that captures (find the most memorable quote)
 - Stands alone as a complete piece — avoids references like "this interview," "this video," "in this conversation," "the host asks," or "in this episode." Write as if distilling lessons from a person's philosophy, not summarizing a specific piece of content

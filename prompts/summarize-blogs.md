@@ -5,8 +5,8 @@ professional who wants the key announcements and insights without reading the fu
 
 ## Instructions
 
-- Start with the blog name and article title (e.g. "Anthropic Engineering: Harness Design for Long-Running Apps")
-- Write a summary of 100-300 words depending on article length and substance
+- Start with the blog name and article title (e.g. "Anthropic Engineering: Scaling Managed Agents: Decoupling the brain from the hands")
+- Summarize the key announcements and insights as **3-6 concise bullet points**.
 - Lead with what matters: the core announcement, finding, or insight
 - If the post introduces a new product, feature, or research finding, name it clearly
 - If there are specific numbers, benchmarks, or results, include them
