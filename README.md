@@ -1,17 +1,49 @@
 **English** | [中文](README.zh-CN.md)
 
-# Follow Builders, Not Influencers
+# 🤖 Follow Builders: Gemini CLI Edition
 
-An AI-powered digest that tracks the top builders in AI — researchers, founders, PMs,
-and engineers who are actually building things — and delivers curated summaries of
-what they're saying.
+**A high-signal AI industry digest, fully integrated as a conversational Skill for the Google Gemini CLI.**
 
-**Credits:** This skill is originally created by [Zara Zhang](https://github.com/zarazhangrui)
-as the [Follow Builders](https://github.com/zarazhangrui/follow-builders) project.
-This version is optimized to work with **Google Gemini**.
+> **Attribution:** This project is a specialized adaptation of the original [Follow Builders](https://github.com/zarazhangrui/follow-builders) project created by [Zara Zhang](https://github.com/zarazhangrui). While the mission of tracking elite AI builders remains the same, this version is re-engineered specifically for the **Gemini CLI ecosystem**.
 
-**Philosophy:** Follow people who build products and have original opinions, not
-influencers who regurgitate information.
+---
+
+## 🌟 What's New in the Gemini Edition?
+Unlike the original project which requires manual `.env` configuration, this version is designed to be **managed entirely through conversation with an AI agent**.
+
+### ✨ My Contributions & Enhancements:
+- **Zero-Config Setup:** The Gemini agent handles the entire setup via chat. No more manual editing of API keys or `.env` files.
+- **Gemini-Optimized Intelligence:** All `prompts/` have been overhauled to leverage Gemini's specific strengths in long-context summarization and technical reasoning.
+- **Bilingual Mastery:** Deep integration of English/Chinese translation logic, allowing for seamless, interleaved bilingual digests.
+- **Google Workspace Integration:** Natively wired into Gemini's Gmail tools for automated daily/weekly delivery.
+- **Terminal-Native Formatting:** Optimized Markdown output designed to be perfectly readable inside a CLI environment.
+
+---
+
+## 🛠 Installation for Gemini CLI
+
+To add this skill to your environment:
+
+1. **Clone the repository** into your Gemini skills directory:
+   ```bash
+   git clone https://github.com/zgz20191202/AI-builders-Gemini.git ~/.gemini/skills/follow-builders
+   ```
+
+2. **Install script dependencies**:
+   ```bash
+   cd ~/.gemini/skills/follow-builders/scripts && npm install
+   ```
+
+3. **Activate & Configure**:
+   Launch your Gemini CLI and simply say:
+   > "Activate the follow-builders skill"
+   
+   The agent will then guide you through your frequency, language, and delivery preferences.
+
+---
+
+## 📖 Philosophy
+Follow people who build products and have original opinions, not influencers who regurgitate information. This tool tracks researchers, founders, PMs, and engineers who are actually building the future of AI.
 
 ## What You Get
 
@@ -23,20 +55,6 @@ WhatsApp, etc.) or email, with:
 - Full articles from official AI company blogs (Anthropic Engineering, Claude Blog)
 - Links to all original content
 - Available in English, Chinese, or bilingual
-
-## Quick Start
-
-1. Install the skill in your **Gemini CLI**
-2. Say "set up follow builders" or invoke `activate_skill follow-builders`
-3. The agent walks you through setup conversationally — no config files to edit
-
-The agent will ask you:
-- How often you want your digest (daily or weekly) and what time
-- What language you prefer
-- How you want it delivered (Email, Telegram, or in-chat)
-
-No API keys needed — all content is fetched centrally.
-Your first digest arrives immediately after setup.
 
 ## Changing Settings
 
@@ -86,14 +104,6 @@ These are plain English instructions, not code. Changes take effect on the next 
 - [Anthropic Engineering](https://www.anthropic.com/engineering) — technical deep-dives from the Anthropic team
 - [Claude Blog](https://claude.com/blog) — product announcements and updates from Claude
 
-## Installation
-
-### Gemini CLI
-```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.gemini/skills/follow-builders
-cd ~/.gemini/skills/follow-builders/scripts && npm install
-```
-
 ## Requirements
 
 - **Gemini CLI** (configured with Google Gemini)
@@ -109,8 +119,6 @@ is fetched centrally and updated daily.
 2. Your agent fetches the feed — one HTTP request, no API keys
 3. Your agent remixes the raw content into a digestible summary using your preferences
 4. The digest is delivered to your email/messaging app (or shown in-chat)
-
-See [examples/sample-digest.md](examples/sample-digest.md) for what the output looks like.
 
 ## Privacy
 

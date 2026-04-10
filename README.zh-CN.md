@@ -1,24 +1,49 @@
 [English](README.md) | **中文**
 
-# 追踪建造者，而非网红 (Gemini CLI 版)
+# 🤖 Follow Builders: Gemini CLI 版
 
-**致谢：** 此项目基于 [Zara Zhang](https://github.com/zarazhangrui) 创建的 [Follow Builders](https://github.com/zarazhangrui/follow-builders) 开源项目。所有的内容抓取逻辑和追踪高信号 AI 建造者的核心理念均源自她的工作。
+**高信号 AI 行业摘要，现已作为对话式 Skill 完全集成至 Google Gemini CLI。**
+
+> **致谢：** 此项目基于 [Zara Zhang](https://github.com/zarazhangrui) 创建的 [Follow Builders](https://github.com/zarazhangrui/follow-builders) 开源项目。虽然追踪顶级 AI 建造者的使命未变，但此版本已针对 **Gemini CLI 生态系统** 进行了专门的重新设计。
 
 ---
 
-## 🚀 Gemini CLI 集成
-此仓库包含了我为 **Google Gemini CLI** 打造的个人增强功能和集成。我已经将原有的逻辑进行了适配，使其能够作为 Gemini 生态系统中的一个 “Skill” 无缝运行。
+## 🌟 Gemini CLI 版有哪些新功能？
+与原项目需要手动配置 `.env` 文件不同，此版本旨在**完全通过与 AI agent 对话来管理**。
 
-**此版本的主要贡献：**
-- **交互式设置：** 全对话式配置——无需手动编辑 `.env` 文件。只需对 agent 说 "set up follow builders" 即可完成。
-- **针对 Gemini 优化的 Prompt：** 重写了 `prompts/` 目录，充分利用 Gemini 在摘要提取和双语翻译方面的特定优势。
-- **CLI 工作流：** 内置支持“直接在聊天中显示摘要”，让你可以在终端会话中实时查看推送内容。
-- **自动化推送：** 集成了 Google Workspace (Gmail)，实现轻松的每日或每周邮件推送。
+### ✨ 我的主要贡献与增强：
+- **零配置设置：** Gemini agent 会通过聊天引导你完成整个设置。无需再手动编辑 API key 或 `.env` 文件。
+- **针对 Gemini 优化的智能：** 所有的 `prompts/` 目录都经过了重新设计，以充分利用 Gemini 在长文本摘要提取和技术推理方面的特定优势。
+- **卓越的双语能力：** 深度集成了中英翻译逻辑，支持无缝的、中英交替的双语推送摘要。
+- **Google Workspace 集成：** 原生连接了 Gemini 的 Gmail 工具，实现轻松的每日或每周邮件推送。
+- **终端原生格式化：** 优化的 Markdown 输出，确保在 CLI 终端环境下拥有完美的阅读体验。
+
+---
+
+## 🛠 Gemini CLI 安装指南
+
+要将此 Skill 添加到你的环境：
+
+1. **克隆仓库**到你的 Gemini skills 目录：
+   ```bash
+   git clone https://github.com/zgz20191202/AI-builders-Gemini.git ~/.gemini/skills/follow-builders
+   ```
+
+2. **安装脚本依赖**：
+   ```bash
+   cd ~/.gemini/skills/follow-builders/scripts && npm install
+   ```
+
+3. **激活并配置**：
+   启动你的 Gemini CLI，并简单地说一句：
+   > "激活 follow-builders skill"
+   
+   Agent 随后会引导你完成推送频率、语言和推送方式的偏好设置。
 
 ---
 
 ## 📖 理念
-追踪那些真正在做产品、有独立见解的人，而非只会搬运信息的网红。这是一个 AI 驱动的信息聚合工具，追踪 AI 领域最顶尖的建造者——研究员、创始人、产品经理和工程师——并将他们的最新动态整理成易于消化的摘要推送给你。
+追踪那些真正在做产品、有独立见解的人，而非只会搬运信息的网红。追踪 AI 领域最顶尖的建造者——研究员、创始人、产品经理和工程师——并将他们的最新动态整理成易于消化的摘要推送给你。
 
 ## 你会得到什么
 
@@ -29,20 +54,6 @@
 - AI 公司官方博客的完整文章（Anthropic Engineering、Claude Blog）
 - 所有原始内容的链接
 - 支持英文、中文或双语版本
-
-## 快速开始
-
-1. 在你的 **Gemini CLI** 中安装此 Skill
-2. 输入 "set up follow builders" 或执行 `activate_skill follow-builders`
-3. Agent 会以对话方式引导你完成设置——不需要手动编辑任何配置文件
-
-Agent 会询问你：
-- 推送频率（每日或每周）和时间
-- 语言偏好
-- 推送方式（邮件、Telegram 或直接在聊天中显示）
-
-不需要任何 API key——所有内容由中心化服务统一抓取。
-设置完成后，你的第一期摘要会立即推送。
 
 ## 修改设置
 
@@ -89,14 +100,6 @@ Skill 使用纯文本 prompt 文件来控制内容的摘要方式。你可以通
 - [Anthropic Engineering](https://www.anthropic.com/engineering) — Anthropic 团队的技术深度文章
 - [Claude Blog](https://claude.com/blog) — Claude 的产品公告与更新
 
-## 安装
-
-### Gemini CLI
-```bash
-git clone https://github.com/zgz20191202/AI-builders-Gemini.git ~/.gemini/skills/follow-builders
-cd ~/.gemini/skills/follow-builders/scripts && npm install
-```
-
 ## 系统要求
 
 - **Gemini CLI** (配置有 Google Gemini)
@@ -110,8 +113,6 @@ cd ~/.gemini/skills/follow-builders/scripts && npm install
 2. 你的 agent 获取 feed——一次 HTTP 请求，不需要 API key
 3. 你的 agent 根据你的偏好将原始内容重新混编为易消化的摘要
 4. 摘要推送到你的邮件/通讯工具（或直接在聊天中显示）
-
-查看 [examples/sample-digest.md](examples/sample-digest.md) 了解输出示例。
 
 ## 隐私
 
