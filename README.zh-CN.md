@@ -1,14 +1,28 @@
 [English](README.md) | **中文**
 
-# 追踪建造者，而非网红
+# 追踪建造者，而非网红 (Gemini CLI 版)
 
-一个 AI 驱动的信息聚合工具，追踪 AI 领域最顶尖的建造者——研究员、创始人、产品经理和工程师——并将他们的最新动态整理成易于消化的摘要推送给你。
+**致谢：** 此项目基于 [Zara Zhang](https://github.com/zarazhangrui) 创建的 [Follow Builders](https://github.com/zarazhangrui/follow-builders) 开源项目。所有的内容抓取逻辑和追踪高信号 AI 建造者的核心理念均源自她的工作。
 
-**理念：** 追踪那些真正在做产品、有独立见解的人，而非只会搬运信息的网红。
+---
+
+## 🚀 Gemini CLI 集成
+此仓库包含了我为 **Google Gemini CLI** 打造的个人增强功能和集成。我已经将原有的逻辑进行了适配，使其能够作为 Gemini 生态系统中的一个 “Skill” 无缝运行。
+
+**此版本的主要贡献：**
+- **交互式设置：** 全对话式配置——无需手动编辑 `.env` 文件。只需对 agent 说 "set up follow builders" 即可完成。
+- **针对 Gemini 优化的 Prompt：** 重写了 `prompts/` 目录，充分利用 Gemini 在摘要提取和双语翻译方面的特定优势。
+- **CLI 工作流：** 内置支持“直接在聊天中显示摘要”，让你可以在终端会话中实时查看推送内容。
+- **自动化推送：** 集成了 Google Workspace (Gmail)，实现轻松的每日或每周邮件推送。
+
+---
+
+## 📖 理念
+追踪那些真正在做产品、有独立见解的人，而非只会搬运信息的网红。这是一个 AI 驱动的信息聚合工具，追踪 AI 领域最顶尖的建造者——研究员、创始人、产品经理和工程师——并将他们的最新动态整理成易于消化的摘要推送给你。
 
 ## 你会得到什么
 
-每日或每周推送到你常用的通讯工具（Telegram、Discord、WhatsApp 等），包含：
+每日或每周推送到你常用的通讯工具（Telegram、Discord、WhatsApp 等）或邮件，包含：
 
 - 顶级 AI 播客新节目的精华摘要
 - 25 位精选 AI 建造者在 X/Twitter 上的关键观点和洞察
@@ -18,14 +32,14 @@
 
 ## 快速开始
 
-1. 在你的 AI agent 中安装此 skill（OpenClaw 或 Claude Code）
-2. 输入 "set up follow builders" 或执行 `/follow-builders`
+1. 在你的 **Gemini CLI** 中安装此 Skill
+2. 输入 "set up follow builders" 或执行 `activate_skill follow-builders`
 3. Agent 会以对话方式引导你完成设置——不需要手动编辑任何配置文件
 
 Agent 会询问你：
 - 推送频率（每日或每周）和时间
 - 语言偏好
-- 推送方式（Telegram、邮件或直接在聊天中显示）
+- 推送方式（邮件、Telegram 或直接在聊天中显示）
 
 不需要任何 API key——所有内容由中心化服务统一抓取。
 设置完成后，你的第一期摘要会立即推送。
@@ -77,25 +91,15 @@ Skill 使用纯文本 prompt 文件来控制内容的摘要方式。你可以通
 
 ## 安装
 
-### OpenClaw
+### Gemini CLI
 ```bash
-# 从 ClawhHub 安装（即将上线）
-clawhub install follow-builders
-
-# 或手动安装
-git clone https://github.com/zarazhangrui/follow-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
-```
-
-### Claude Code
-```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
+git clone https://github.com/zgz20191202/AI-builders-Gemini.git ~/.gemini/skills/follow-builders
+cd ~/.gemini/skills/follow-builders/scripts && npm install
 ```
 
 ## 系统要求
 
-- 一个 AI agent（OpenClaw、Claude Code 或类似工具）
+- **Gemini CLI** (配置有 Google Gemini)
 - 网络连接（用于获取中心化 feed）
 
 仅此而已。不需要任何 API key。所有内容（博客文章 + YouTube 字幕 + X/Twitter 帖子）由中心化服务每日抓取更新。
@@ -105,7 +109,7 @@ cd ~/.claude/skills/follow-builders/scripts && npm install
 1. 中心化 feed 每日更新，抓取所有信息源的最新内容（博客文章通过网页抓取，YouTube 字幕通过 Supadata，X/Twitter 通过官方 API）
 2. 你的 agent 获取 feed——一次 HTTP 请求，不需要 API key
 3. 你的 agent 根据你的偏好将原始内容重新混编为易消化的摘要
-4. 摘要推送到你的通讯工具（或直接在聊天中显示）
+4. 摘要推送到你的邮件/通讯工具（或直接在聊天中显示）
 
 查看 [examples/sample-digest.md](examples/sample-digest.md) 了解输出示例。
 

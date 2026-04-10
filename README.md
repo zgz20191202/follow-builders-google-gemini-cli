@@ -6,13 +6,17 @@ An AI-powered digest that tracks the top builders in AI — researchers, founder
 and engineers who are actually building things — and delivers curated summaries of
 what they're saying.
 
+**Credits:** This skill is originally created by [Zara Zhang](https://github.com/zarazhangrui)
+as the [Follow Builders](https://github.com/zarazhangrui/follow-builders) project.
+This version is optimized to work with **Google Gemini**.
+
 **Philosophy:** Follow people who build products and have original opinions, not
 influencers who regurgitate information.
 
 ## What You Get
 
 A daily or weekly digest delivered to your preferred messaging app (Telegram, Discord,
-WhatsApp, etc.) with:
+WhatsApp, etc.) or email, with:
 
 - Summaries of new podcast episodes from top AI podcasts
 - Key posts and insights from 25 curated AI builders on X/Twitter
@@ -22,14 +26,14 @@ WhatsApp, etc.) with:
 
 ## Quick Start
 
-1. Install the skill in your agent (OpenClaw or Claude Code)
-2. Say "set up follow builders" or invoke `/follow-builders`
+1. Install the skill in your **Gemini CLI**
+2. Say "set up follow builders" or invoke `activate_skill follow-builders`
 3. The agent walks you through setup conversationally — no config files to edit
 
 The agent will ask you:
 - How often you want your digest (daily or weekly) and what time
 - What language you prefer
-- How you want it delivered (Telegram, email, or in-chat)
+- How you want it delivered (Email, Telegram, or in-chat)
 
 No API keys needed — all content is fetched centrally.
 Your first digest arrives immediately after setup.
@@ -84,25 +88,15 @@ These are plain English instructions, not code. Changes take effect on the next 
 
 ## Installation
 
-### OpenClaw
+### Gemini CLI
 ```bash
-# From ClawhHub (coming soon)
-clawhub install follow-builders
-
-# Or manually
-git clone https://github.com/zarazhangrui/follow-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
-```
-
-### Claude Code
-```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
+git clone https://github.com/zarazhangrui/follow-builders.git ~/.gemini/skills/follow-builders
+cd ~/.gemini/skills/follow-builders/scripts && npm install
 ```
 
 ## Requirements
 
-- An AI agent (OpenClaw, Claude Code, or similar)
+- **Gemini CLI** (configured with Google Gemini)
 - Internet connection (to fetch the central feed)
 
 That's it. No API keys needed. All content (blog articles + YouTube transcripts + X/Twitter posts)
@@ -114,7 +108,7 @@ is fetched centrally and updated daily.
    (blog articles via web scraping, YouTube transcripts via Supadata, X/Twitter via official API)
 2. Your agent fetches the feed — one HTTP request, no API keys
 3. Your agent remixes the raw content into a digestible summary using your preferences
-4. The digest is delivered to your messaging app (or shown in-chat)
+4. The digest is delivered to your email/messaging app (or shown in-chat)
 
 See [examples/sample-digest.md](examples/sample-digest.md) for what the output looks like.
 
@@ -128,4 +122,3 @@ See [examples/sample-digest.md](examples/sample-digest.md) for what the output l
 ## License
 
 MIT
-
