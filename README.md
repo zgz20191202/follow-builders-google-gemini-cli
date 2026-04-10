@@ -9,7 +9,7 @@
 ---
 
 ## 🌟 What's New in the Gemini Edition?
-Unlike the original project which requires manual `.env` configuration, this version is designed to be **managed entirely through conversation with an AI agent**.
+
 
 ### ✨ My Contributions & Enhancements:
 - **Gemini-Optimized Intelligence:** All `prompts/` have been overhauled to leverage Gemini's specific strengths in long-context summarization and technical reasoning.
